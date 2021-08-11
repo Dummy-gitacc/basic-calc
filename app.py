@@ -11,6 +11,7 @@ def index():
 
 @app.route('/success',methods=['POST'])
 def success():
+    global f
     f=request.files['file']
     success.file_name=f.filename
     f.save(success.file_name)
