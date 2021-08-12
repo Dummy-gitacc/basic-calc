@@ -1,5 +1,3 @@
-# basic-calc
-Basic calculator web app
 <!DOCTYPE html>
 <html>
 <body>
