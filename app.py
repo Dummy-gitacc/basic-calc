@@ -35,7 +35,7 @@ def success():
             return ('<p> Division was selected </p2><br>'
                     '<p> a / b = {}</p>'.format(input1/input2,))
         
-@app.route('/success2', methods = ['GET', 'POST'])
+@app.route('/success2', methods = ['POST'])
 def upload_file():
    if request.method == 'POST':
       f = request.files['file']
