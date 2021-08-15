@@ -36,11 +36,13 @@ def success():
                     '<p> a / b = {}</p>'.format(input1/input2,))
         
 @app.route('/success2', methods = ['POST'])
-def upload_file():
-   if request.method == 'POST':
-      f = request.files['file']
-      f.save(secure_filename(f.filename))
-      return 'file uploaded successfully'
+def success2():
+#    if request.method == 'POST':
+     f = request.files['file']
+#    f.save(secure_filename(f.filename))
+     success2.file_name=f.filename
+     f.save(success2.filename)
+     return 'file uploaded successfully'
 
 if __name__ == "__main__":
     app.run(debug=True)
