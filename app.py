@@ -11,10 +11,10 @@ def index():
 
 @app.route('/success',methods=['POST'])
 def success():
-    global f
-    f=request.files['file']
-    success.file_name=f.filename
-    f.save(success.file_name)
+#     global f
+#     f=request.files['file']
+#     success.file_name=f.filename
+#     f.save(success.file_name)
     input1 = int(request.form['value_a'])
     input2 = int(request.form['value_b'])
     oper=request.form['oper']
